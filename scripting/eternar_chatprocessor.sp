@@ -77,13 +77,13 @@ public void OnPluginEnd()
 
 public void OnPluginStarted()
 {
-	ConsoleVariables[ConVar_Enabled]			= CreateConVar("eternar_cp_enabled", "1", "Plugin Status");
+	ConsoleVariables[ConVar_Enabled]		= CreateConVar("eternar_cp_enabled", "1", "Plugin Status");
 	ConsoleVariables[ConVar_StripBypass]		= CreateConVar("eternar_cp_strip_bypass", "b", "Flag that bypass color strip | requires: eternar_cp_strip_colors 1");
 	ConsoleVariables[ConVar_StripColors]		= CreateConVar("eternar_cp_strip_colors", "1", "Remove color codes from the name and the message before processing the output");
-	ConsoleVariables[ConVar_AllChat]			= CreateConVar("eternar_cp_allchat", "0", "Allows both teams to communicate with each other through team chat");
-	ConsoleVariables[ConVar_DeadChat]			= CreateConVar("eternar_cp_deadchat", "1", "Controls how dead communicate");
+	ConsoleVariables[ConVar_AllChat]		= CreateConVar("eternar_cp_allchat", "0", "Allows both teams to communicate with each other through team chat");
+	ConsoleVariables[ConVar_DeadChat]		= CreateConVar("eternar_cp_deadchat", "1", "Controls how dead communicate");
 	ConsoleVariables[ConVar_RestrictDeadChat]	= CreateConVar("eternar_cp_deadchat_restrict", "0", "Restricts the chat for dead players entirely");
-	ConsoleVariables[ConVar_GOTV]				= CreateConVar("eternar_cp_gotv_recipient", "1", "GOTV clients should receive the chat messages?");
+	ConsoleVariables[ConVar_GOTV]			= CreateConVar("eternar_cp_gotv_recipient", "1", "GOTV clients should receive the chat messages?");
 	
 	AutoExecConfig(true, "Eternar/eternar-chat-processor");
 	LoadTranslations("common.phrases");
@@ -270,7 +270,6 @@ public Action OnSayText2(UserMsg msg_id, BfRead msg, const int[] players, int pl
 	pack.WriteCell(bDeadRestrict);
 	
 	RequestFrame(Frame_OnChatMessage, pack);
-
 	return Plugin_Stop;
 }
 
