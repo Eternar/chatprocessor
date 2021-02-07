@@ -15,7 +15,7 @@
 * param maxlength		Max length of the buffer.
 *
 * return types
-*  - Plugin_Continue	Continues the message.
+*  - Plugin_Continue		Continues the message.
 *  - Plugin_Changed		Continues the message.
 *  - Plugin_Handled		Stops the message.
 *  - Plugin_Stop		Stops the message.
@@ -31,11 +31,11 @@ forward Action ECP_OnChatMessageSendPre(int sender, int receiver, char[] templat
 * param msgtype			Determine the type of message.
 * param name			Name of the author to be pushed.
 * param message			Message from the author to be pushed.
-* param processcolors	Toggle to process colors in the buffer strings.
-* param removecolors	Toggle to remove colors in the buffer strings. (Requires bProcessColors = true)
+* param processcolors		Toggle to process colors in the buffer strings.
+* param removecolors		Toggle to remove colors in the buffer strings. (Requires bProcessColors = true)
 *
 * return types
-*  - Plugin_Continue	Continues the message.
+*  - Plugin_Continue		Continues the message.
 *  - Plugin_Changed		Fires the post-forward below and prints out a message.
 *  - Plugin_Handled		Fires the post-forward below but doesn't print a message.
 *  - Plugin_Stop		Stops the message.
@@ -51,8 +51,8 @@ forward Action ECP_OnChatMessage(int& author, ArrayList recipients, char[] msgty
 * param template		Format used in the message based on the flag string.
 * param name			Name of the author.
 * param message			Message from the author.
-* param processcolors	Check if colors were processed in the buffer strings.
-* param removecolors	Check if colors were removed from the buffer strings.
+* param processcolors		Check if colors were processed in the buffer strings.
+* param removecolors		Check if colors were removed from the buffer strings.
 *
 * noreturn
 **/
