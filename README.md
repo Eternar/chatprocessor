@@ -1,5 +1,5 @@
 # Chat Processor
-Our version of chat processor that allows other plugins to interact with the chat features.
+Our version of chat processor that allows other plugins to interact with the chat features. ([Documentation](https://github.com/Eternar/chatprocessor/blob/main/scripting/include/eternar-chat-processor.inc))
 
 ## Installation
 
