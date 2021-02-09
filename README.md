@@ -3,7 +3,10 @@ Our version of chat processor that allows other plugins to interact with the cha
 
 ## Installation
 
-You can install this plugin using our ingame package manager ([API](https://github.com/Eternar/API))
+You can install this plugin **automatically** using our ingame plugin manager ([API](https://github.com/Eternar/API)) or via cloning this repository.
+
+## Dependencies
+Eternar ([API](https://github.com/Eternar/API))
 
 ## Usage
 ```C#
