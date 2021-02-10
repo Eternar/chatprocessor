@@ -12,8 +12,8 @@ You can install this plugin **automatically** using our ingame plugin manager ([
 ```C#
 public Action ECP_OnChatMessage(int& author, ArrayList recipients, char[] flagstring, char[] name, char[] message, bool& processcolors, bool& removecolors)
 {
-	Format(name, MAXLENGTH_NAME, "{red}%s", name);
-	Format(message, MAXLENGTH_MESSAGE, "{blue}%s", message);
+	Format(name, MAX_MESSAGE_LENGTH, "{red}%s", name);
+	Format(message, MAX_MESSAGE_LENGTH, "{blue}%s", message);
 	return Plugin_Changed;
 }
 ```
